@@ -30,3 +30,22 @@ sed -i '/customized in this file/a net.netfilter.nf_conntrack_max=165535' packag
 
 #替换为 JerryKuKu 的 Argon
 rm openwrt/package/lean/luci-theme-argon -rf
+
+#新加入插件第二部分
+pushd package/lean
+git clone --depth=1 https://github.com/rufengsuixing/luci-app-onliner
+git clone --depth=1 https://github.com/kuoruan/luci-app-kcptun
+git clone --depth=1 https://github.com/jerrykuku/luci-app-ttnode
+git clone --depth=1 https://github.com/jerrykuku/luci-app-jd-dailybonus
+git clone --depth=1 https://github.com/vernesong/OpenClash
+git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr
+git clone --depth=1 https://github.com/tianiue/luci-app-bypass
+git clone --depth=1 https://github.com/yuos-bit/luci-app-openclash
+git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff
+git clone --depth=1 https://github.com/kenzok78/luci-app-netspeedtest
+#git clone --depth=1 https://github.com/souwei168/luci-app-store
+git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2
+git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall
+git clone --depth=1 https://github.com/hubbylei/luci-app-passwall
+
+popd
